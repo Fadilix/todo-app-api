@@ -4,7 +4,7 @@ from flask_cors import CORS
 import os
 
 app = Flask(__name__)
-CORS(app) # Active les CORS pour toutes les routes
+CORS(app)  # Active les CORS pour toutes les routes
 
 # Obtention de la variable d'environnement
 DATABASE_URI = os.getenv("DATABASE_URI")
