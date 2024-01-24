@@ -109,9 +109,11 @@ def update_task(task_id):
 
         return jsonify(
             {
-                "id": task.id,
-                "title": task.title,
-                "done": task.done,
+                "new_task": {
+                    "id": task.id,
+                    "title": task.title,
+                    "done": task.done,
+                }
             }
         )
     else:
